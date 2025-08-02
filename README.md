@@ -18,7 +18,8 @@ Tech Stack
 
 Dataset
 - Taken from kaggle :-
-(https://www.kaggle.com/datasets/kazanova/sentiment140) # took dataset from kaggle
+(https://www.kaggle.com/datasets/kazanova/sentiment140) # click on the link and you will be redirected to this dataset
+After downloading you will be renaming the dataset as (raw_sentiment_data.csv)
 
 
 How It Works
