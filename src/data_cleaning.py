@@ -22,8 +22,10 @@ def clean_text(text):
 
 def main():
     # Define input and output paths
-    input_file = os.path.join("..", "data", "E:\SystemAnalysisProject\data/raw_sentiment_data.csv")
-    output_file = os.path.join("..", "data", "cleaned_sentiment_data.csv")
+    input_file = r"e:\SystemAnalysisProject\data\raw_sentiment_data.csv"
+    output_file = r"e:\SystemAnalysisProject\data\cleaned_sentiment_data.csv"
+
+    print("Looking for file at:", input_file)  # Debugging line
 
     # ✅ Check if file exists before loading
     if not os.path.exists(input_file):

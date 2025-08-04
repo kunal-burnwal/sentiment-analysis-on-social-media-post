@@ -5,7 +5,7 @@ import os
 
 def main():
     input_file = "E:\SystemAnalysisProject\data\cleaned_sentiment_data.csv"
-    vectorizer_file = os.path.join("..", "models", "tfidf_vectorizer.pkl")
+    vectorizer_file = r"E:\SystemAnalysisProject\models\tfidf_vectorizer.pkl"
 
     print("Loading cleaned data...")
     df = pd.read_csv(input_file)
