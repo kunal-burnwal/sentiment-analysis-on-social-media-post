@@ -17,7 +17,7 @@ SystemAnalysisProject/
 │
 ├── src/
 │   ├── data_cleaning.py                    # Cleans raw tweets
-│   ├── feature_extraction.py              # Applies TF-IDF transformation
+│   ├── feature_extraction.py               # Applies TF-IDF transformation
 │   ├── model_training.py                   # Trains and evaluates sentiment classifier
 │   └── predict_sentiment.py                # Predicts sentiment from new input text
 │
@@ -38,68 +38,6 @@ Download the Sentiment140 dataset (CSV) from Kaggle:
 Rename the file to `raw_sentiment_data.csv` and place it inside:
 
 E:\SystemAnalysisProject\data\
-
-
-##  How to Run the Code
-
-> ❗ **IMPORTANT**: Since file access is done using system-specific paths, **you must use your full system path** (like `E:/SystemAnalysisProject/`) in your script or terminal.
-
-### Step-by-Step Execution (in VS Code or Terminal)
-
-1. **Clean the Raw Data**
-   bash
-   cd E:\SystemAnalysisProject\src
-   python data_cleaning.py
-   
-
-2. **Extract Features with TF-IDF**
-   bash
-   python feature_extraction.py
-   
-
-3. **Train the Model**
-   bash
-   python model_training.py
-   
-
-4. **Make Predictions**
-   bash
-   python predict_sentiment.py
-   
-
->  If you get a `FileNotFoundError`, make sure:
-> - All folders (`data`, `models`) exist
-> - Files are placed at correct paths
-> - You run the script from the correct directory (`src` folder)
-
-
-##  Output
-
-- `cleaned_sentiment_data.csv`: Preprocessed text data
-- `tfidf_vectorizer.pkl`: Serialized vectorizer used to transform new input
-- `sentiment_model.pkl`: Trained logistic regression model
-- Sentiment prediction shown on terminal and confusion matrix plotted
-
-
-##  Example
-
-You can test a custom sentence using `predict_sentiment.py`. Just edit the `sample_text` variable in the file:
-
-python
-sample_text = "I love this product, it's fantastic!"
-
-
-Run:
-bash
-python predict_sentiment.py
-
-
-##  Notes
-
-- If you face syntax errors with paths like `E:\...`, use raw strings or double backslashes:  
-   `r"E:\path\to\file"` or `E:\\path\\to\\file`
-- Always run scripts from inside the `/src` folder or use absolute paths when needed.
-- You can adjust the `sample()` size in `model_training.py` if your system has memory limits.
 
 
 
